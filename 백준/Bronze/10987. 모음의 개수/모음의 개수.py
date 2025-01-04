@@ -1,3 +1,8 @@
 a = input()
-total = a.count('a') + a.count('e') + a.count('i') + a.count('o') + a.count('u')
-print(total)
+count = 0
+
+for i in a:
+    if i in 'aeiou':
+        count += 1
+
+print(count)
